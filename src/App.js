@@ -26,11 +26,8 @@ componentDidMount(){
 
     return(
         <div className="App">
+          <h1>Monsters Rolodex</h1>
           <SearchList placeholder ="Search Monsters" handleChange = {e => this.setState({ searchField : e.target.value})} />
-
-          {/* <input type='search' className = "search" placeholder ="Search Monsters"  onChange = {e => this.setState({ searchField : e.target.value})}/> */}
-
-
           <CardList monsters = {filteredMonsters} />
         </div>
     )
